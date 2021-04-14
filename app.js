@@ -19,11 +19,11 @@ function updateImg() {
         img.setAttribute('crossorigin', 'anonymous');
         img.src = imgInp.value;
         img.onload = function () {
-            if(img.width>1200){
+            if(img.width>1119){
                 width = img.width/2;
                 height = img.height/2;
             }
-            else if(img.width>651 && img.width<1119){
+            else if(img.width>651 && img.width<1200){
                 let ratio=img.height/(img.width);
                 width=640;
                 height=640*ratio;
