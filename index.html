@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://use.typekit.net/cvg2jfp.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Task 5</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 style="margin-top: 0;">IMAGE EDITOR</h1>
+            <div class="imgInp">
+                <input type="url" placeholder="Enter image link">
+                <div onclick="updateImg()">GO</div>
+            </div>
+        </div>
+        <div class="imgContainer">
+            <div class="imgDiv">
+                <div class="canvas">
+                    <canvas id="imgCanvas" style="display: none;"></canvas>
+                </div>
+                <img src="jeremy-bishop-Gx879ThpqWQ-unsplash.jpg" alt="" id="image">
+            </div>
+            <div class="optionDiv">
+                <div class="effects">
+                    <h3>EFFECTS</h3>
+                    <div class="option">
+                        <div>BRIGHTNESS</div>
+                        <input type="range" min="-100" max="100" value="0" id="bright">
+                    </div>
+                    <div class="option">
+                        <div>SATURATION</div>
+                        <input type="range" min="-100" max="100" value="0" id="saturate">
+                    </div>
+                    <div class="option">
+                        <div>BLUR</div>
+                        <input type="range" min="0" max="20" value="0" id="blur">
+                    </div>
+                    <div class="option">
+                        <div>EXPOSURE</div>
+                        <input type="range" min="-100" max="100" value="0" id="exposure">
+                    </div>
+                    <div class="option">
+                        <div>SEPIA</div>
+                        <input type="range" min="0" max="100" value="0" id="sepia">
+                    </div>
+                    <div class="option">
+                        <div>CONTRAST</div>
+                        <input type="range" min="-100" max="100" value="0" id="contrast">
+                    </div>
+                </div>
+                <div class="text">
+                    <H3>FILTERS</H3>
+                    <div class="invert">INVERT</div>
+                    <div class="grey">GREYSCALE</div>
+                    <div class="vintage">VINTAGE</div>
+                    <div class="orange">ORANGE PEEL</div>
+                    <div class="sun">SUNRISE</div>
+                    <div class="glowing">GLOWING SUN</div>
+                    <div class="sin">SIN CITY</div>
+                    <div class="nostalgia">NOSTALGIA</div>
+                </div>
+            </div>
+        </div>
+        <div class="download">DOWNLOAD</div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="app.js"></script>
+
+</html>
