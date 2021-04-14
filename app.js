@@ -23,7 +23,7 @@ function updateImg() {
                 width = img.width/2;
                 height = img.height/2;
             }
-            else if(img.width>651 && img.width<1200){
+            else if(img.width>651 && img.width<1118){
                 let ratio=img.height/(img.width);
                 width=640;
                 height=640*ratio;
